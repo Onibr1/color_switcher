@@ -11,6 +11,12 @@
                 height: 1%;
                 width: 15%;
             }
+            #demo{
+                line-height: 200px;
+                font-size: 18px;
+                color: #fff;
+                text-align: center;
+            }
             
 
         </style>
@@ -37,6 +43,10 @@
                 greenm = 15;
             }
             document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+            document.getElementById("demo").innerHTML = "Color Hexcode: #"+col[redm]+col[greenm]+col[bluem];
+            if(col[greenm]>="99"){
+                document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; color: #000; ";
+            }
         }
         function lessgreen(){
             if(greenm > 0){
@@ -45,6 +55,10 @@
                 greenm = 0;
             }
             document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+            document.getElementById("demo").innerHTML = "Color Hexcode: #"+col[redm]+col[greenm]+col[bluem];
+            if(col[greenm]>="99"){
+                document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; color: #000; ";
+            }
         }
         function morered(){
             if(redm <15){
@@ -53,6 +67,10 @@
                 redm = 15;
             }
             document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+            document.getElementById("demo").innerHTML = "Color Hexcode: #"+col[redm]+col[greenm]+col[bluem];
+            if(col[redm]>="99"){
+                document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; color: #000; ";
+            }
         }
 
         function lessred(){
@@ -62,6 +80,10 @@
                 redm = 0;
             }
             document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+            document.getElementById("demo").innerHTML = "Color Hexcode: #"+col[redm]+col[greenm]+col[bluem];
+            if(col[redm]>="99"){
+                document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; color: #000; ";
+            }
         }
         function moreblue(){
             if(bluem <15){
@@ -70,6 +92,10 @@
                 bluem = 15;
             }
             document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+            document.getElementById("demo").innerHTML = "Color Hexcode: #"+col[redm]+col[greenm]+col[bluem];
+            if(col[bluem]>="99"){
+                document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; color: #000; ";
+            }
         }
         function lessblue(){
             if(bluem > 0){
@@ -78,6 +104,10 @@
                 bluem = 0;
             }
             document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+            document.getElementById("demo").innerHTML = "Color Hexcode: #"+col[redm]+col[greenm]+col[bluem];
+            if(col[bluem]>="99"){
+                document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; color: #000; ";
+            }
         }
 </script>
 </body>
