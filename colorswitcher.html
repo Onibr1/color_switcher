@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{
+                margin: 0 auto;
+                display: table;
+            }
+            button{
+                margin: 10px;
+                height: 1%;
+                width: 15%;
+            }
+            
+
+        </style>
+    </head>
+<body>
+
+    <div id="container"><p>Experimenting with colors</p>
+
+<p id="demo" style="width: 400px; height: 200px; border: solid 2px black;"></p>
+<button id="redp" onclick="morered()">More Red!</button><button id="redl" onclick="lessred()">Less Red!</button><br>
+<button id="greenp" onclick="moregreen()">More Green!</button><button id="greenl" onclick="lessgreen()">Less Green!</button><br>
+<button id="bluep" onclick="moreblue()">More Blue!</button><button id="bluel" onclick="lessblue()">Less Blue!</button><br>
+</div>
+<script>
+    var col = ["00","11","22","33","44","55","66","77","88","99","AA","BB","CC","DD","EE","FF"];
+    
+    var greenm = 0;
+    var bluem = 0;
+    var redm = 0;
+        function moregreen(){
+            if(greenm <15){
+                greenm +=1;
+            } else {
+                greenm = 15;
+            }
+            document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+        }
+        function lessgreen(){
+            if(greenm > 0){
+                greenm -=1;
+            } else {
+                greenm = 0;
+            }
+            document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+        }
+        function morered(){
+            if(redm <15){
+                redm +=1;
+            } else {
+                redm = 15;
+            }
+            document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+        }
+
+        function lessred(){
+            if(redm > 0){
+                redm -=1;
+            } else {
+                redm = 0;
+            }
+            document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+        }
+        function moreblue(){
+            if(bluem <15){
+                bluem +=1;
+            } else {
+                bluem = 15;
+            }
+            document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+        }
+        function lessblue(){
+            if(bluem > 0){
+                bluem -=1;
+            } else {
+                bluem = 0;
+            }
+            document.getElementById("demo").style = " background : #"+col[redm]+col[greenm]+col[bluem]+";width: 400px; height: 200px; border: solid 2px black; ";
+        }
+</script>
+</body>
+</html>
